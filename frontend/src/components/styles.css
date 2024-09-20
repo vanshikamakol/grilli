@@ -1,0 +1,475 @@
+/* frontend/src/components/styles.css */
+
+.container {
+    width: 80%;
+    margin: 2rem auto;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+header {
+
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+nav a {
+
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.menu-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 1.5rem;
+}
+
+.menu-item div {
+    flex: 1;
+}
+
+.menu-item h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #343a40;
+}
+
+.menu-item p {
+    margin: 0.5rem 0;
+    color: #6c757d;
+}
+
+footer {
+
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+form div {
+    margin-bottom: 1rem;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #343a40;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 0.75rem 1.5rem;
+    background-color: #28a745;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+.success-message {
+    color: #28a745;
+    margin-bottom: 1rem;
+}
+
+.error-message {
+    color: #dc3545;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .menu-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-item img {
+        margin-bottom: 1rem;
+        width: 100%;
+        height: auto;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav a {
+        display: block;
+        margin: 0.5rem 0;
+    }
+}
+
+.menu {
+    padding: 20px;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.menu-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 10px;
+    width: 220px; /* Adjust width as needed */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.menu-card:hover {
+    transform: scale(1.05);
+}
+
+.menu-image {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.menu-name {
+    font-size: 1.2em;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.menu-price {
+    text-align: center;
+    color: #888;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif; /* Or any font of your choice */
+    background-image: url('c:\Users\VANSHIKA\Downloads\restttttt.jpg'); /* Update with your background image path */
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Set default text color to white for contrast */
+}
+
+
+.menu {
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.footer {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+/* src/components/LandingPage.css */
+
+.landing-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+     /* Update with your background image */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.landing-container {
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 50px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    max-width: 80%;
+}
+
+
+
+.welcome-text {
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+}
+
+.tagline {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+    font-family: 'Arial', sans-serif;
+}
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner {
+    border: 8px solid rgba(255, 255, 255, 0.3);
+    border-top: 8px solid #e67e22;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+}
+
+/* Spinner Animation */
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .landing-container {
+        padding: 30px 20px;
+    }
+
+    .welcome-text {
+        font-size: 2em;
+    }
+
+    .tagline {
+        font-size: 1.2em;
+    }
+
+    .logo {
+        width: 120px;
+    }
+}
+
+/* src/components/Menu.css */
+
+.menu {
+    padding: 60px 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+    color: #fff;
+    text-align: center;
+}
+
+.menu h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    font-family: 'Georgia', serif;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu-card {
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    margin: 15px;
+    width: 220px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.menu-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+.menu-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.menu-name {
+    font-size: 1.3em;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.menu-price {
+    text-align: center;
+    color: #e67e22; /* Accent color for price */
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-card {
+        width: 90%;
+    }
+}
+
+.menu-card:hover .menu-image {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+/* Add to src/components/Menu.css */
+
+.dish-modal-overlay {
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dish-modal {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    text-align: center;
+}
+
+.close-button {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.modal-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.modal-price {
+    color: #e67e22;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* styles.css */
+h1 {
+    font-family: 'Poppins', sans-serif; /* Use the imported font */
+    font-size: 3rem; /* Adjust font size */
+    color: #ff5733; /* Choose a stylish color */
+    text-align: center; /* Center the text */
+    animation: bounce 2s infinite; /* Add animation */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Optional shadow effect */
+}
+
+/* Animation keyframes */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0); /* Original position */
+    }
+    50% {
+        transform: translateY(-20px); /* Move up */
+    }
+}
+
+/* Hero section styles */
+.hero-section {
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+    padding: 50px 20px; /* Add padding */
+}
+
+/* styles.css */
+.reservation {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.reservation h2 {
+    text-align: center;
+}
+
+.reservation form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.reservation input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.reservation button {
+    padding: 10px;
+    background-color: #ff5733; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.reservation button:hover {
+    background-color: #c74a2e; /* Darker shade on hover */
+}
+
+.confirmation-message {
+    text-align: center;
+    color: green;
+    margin-top: 15px;
+}
+
+
+
+
